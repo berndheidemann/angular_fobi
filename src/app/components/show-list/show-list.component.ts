@@ -24,4 +24,8 @@ export class ShowListComponent implements OnInit {
   ngOnInit() {
   }
 
+  showDetail(show: Show) {
+    this.showDataService.showDetail(show);
+
+  }
 }

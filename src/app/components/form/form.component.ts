@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Show } from '../../models/show';
-import { ShowDataService } from '../../services/show-data.service';
+import {Component, OnInit} from '@angular/core';
+import {Show} from '../../models/show';
+import {ShowDataService} from '../../services/show-data.service';
 
 @Component({
   selector: 'app-form',
@@ -20,7 +20,7 @@ export class FormComponent implements OnInit {
 
   save() {
     this.showDataService.save(this.show);
-    this.show = new Show(0, '');
+    this.show = new Show();
   }
 
 }

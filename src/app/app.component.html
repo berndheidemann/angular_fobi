@@ -1,17 +1,24 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-  crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-  crossorigin="anonymous">
-
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous">
 
 <router-outlet></router-outlet>
 
 <div class="container">
   <div class="row">
-    <app-show-list class="col-lg-6"></app-show-list>
-  </div>
-  <div class="row" class="col-lg-6">
-    <app-form></app-form>
+    <div class="col-lg-6">
+      <div class="row">
+        <app-show-list class="col-lg-12"></app-show-list>
+      </div>
+      <div class="row">
+        <app-form></app-form>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <app-detail></app-detail>
+    </div>
   </div>
 </div>

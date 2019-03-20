@@ -1,16 +1,14 @@
 <table class="table">
   <thead>
-    <th>ID</th>
-    <th>Title</th>
+  <th>Title</th>
   </thead>
   <tbody>
-    <tr *ngFor="let show of shows">
-      <td>{{show.id}}</td>
-      <td>{{show.title}}</td>
-      <td>
-        <button class="btn btn-primary" (click)="delete(show)">
-          <i class="fa fa-trash"></i></button>
-      </td>
-    </tr>
+  <tr *ngFor="let show of shows">
+    <td (click)="showDetail(show)">{{show.title}}</td>
+    <td>
+      <button class="btn btn-primary" (click)="delete(show)">
+        <i class="fa fa-trash"></i></button>
+    </td>
+  </tr>
   </tbody>
 </table>

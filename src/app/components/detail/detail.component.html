@@ -1,0 +1,12 @@
+<!-- {{ heißt Binding von der TS-Datei Richtung Template}} -->
+<div class="container" *ngIf="show">
+  <div class="row">
+    <div class="card col-lg-8">
+      <img class="card-img-top" [src]="show.image" height="300">
+      <div class="card-body">
+        <h5 class="card-title">{{show.title}}</h5>
+        <p class="card-text" [innerHtml]="show.summary"></p>
+      </div>
+    </div>
+  </div>
+</div>
